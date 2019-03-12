@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MovieController">
+   <bottom>
+      <VBox prefHeight="18.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#backToChooseFunction" text="返回" />
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <Label fx:id="movieChoose_label" text="请选择电影" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ListView fx:id="movielist" onMouseReleased="#selectMovie" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

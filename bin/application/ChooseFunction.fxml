@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FunctionController">
+   <top>
+      <Label fx:id="askFunction_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="251.0" text="请选择您想要的功能" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Button fx:id="movie_button" mnemonicParsing="false" onAction="#watchMovie" text="看电影" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Button fx:id="back_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#backToWelcome" text="返回" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
